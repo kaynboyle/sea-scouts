@@ -146,6 +146,7 @@ a:hover {
  margin-left: 50px;
 }
 
+
 /* form{
   margin-right: -105px;
 } */
@@ -165,12 +166,51 @@ a:hover {
   height: 70%;
   
 }
+
+.flex1 {
+  position: absolute;
+  margin-top: -550px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  transform: scale(1.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex1 > div {
+  padding: 50px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
 .right-card{
   display: flex;
   justify-content: flex-end;
   margin-top: 180px;
   margin-right: 100px;
 
+
+  
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+canvas {
+  background: linear-gradient(45deg, #0d1011 0% 20%, #163486);
+  /* #861625 */
+  margin: 0;
+  padding: 0;
+  border: none;
+  
+}
+#page-extension{
+  margin-top: 20px;
+  margin-bottom: 500px;
 }
 .bios{
   margin-top: 100px;
