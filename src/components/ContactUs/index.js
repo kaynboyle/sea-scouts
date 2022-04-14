@@ -7,11 +7,10 @@ function ContactUs() {
         const cvs = document.querySelector('canvas');
         const c = cvs.getContext('2d');
         cvs.width = window.innerWidth;
-        cvs.height = window.innerHeight;
+        
 
         window.addEventListener('resize', function () {
         cvs.width = window.innerWidth;
-        cvs.height = window.innerHeight;
         });
         window.addEventListener('mousemove', function (e) {
             mouse.x = e.x;
@@ -91,7 +90,7 @@ function ContactUs() {
       }, []);
     return (
         <div className="App">
-            <canvas id="myCanvas"></canvas>
+            <canvas id="myCanvas" height="1100" ></canvas>
             <div className="flex1">
                 <div class="card">
                 <div class="card-body">
