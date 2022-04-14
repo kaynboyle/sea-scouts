@@ -62,7 +62,7 @@ function ContactUs() {
     
     for (let i = 0; i < 100; i++) {
     
-      const start = { x: -250, y: 800 };
+      const start = { x: -250, y: 1000 };
       const random = Math.random() - 0.5;
       const unit = 25;
     
@@ -77,7 +77,7 @@ function ContactUs() {
     
     function animate() {
       requestAnimationFrame(animate);
-      c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      c.clearRect(0, 0, window.innerWidth, 1500);
       lineArray.forEach(line => {
         line.draw();
       })
@@ -90,7 +90,7 @@ function ContactUs() {
       }, []);
     return (
         <div className="App">
-            <canvas id="myCanvas" height="1100" ></canvas>
+            <canvas id="myCanvas" height="1000" ></canvas>
             <div className="flex1">
                 <div class="card">
                 <div class="card-body">
