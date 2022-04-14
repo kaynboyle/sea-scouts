@@ -3,7 +3,7 @@ var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';
 // import {Elements} from '@stripe/react-stripe-js';
 // import {loadStripe} from '@stripe/stripe-js'
-const BusinessSolutions = () => {
+const TerminalServices = () => {
 
 return(
     <main id="donate-page" className="flex-row">
@@ -17,5 +17,4 @@ return(
 )
 };
 
-export default BusinessSolutions;
-
+export default TerminalServices;

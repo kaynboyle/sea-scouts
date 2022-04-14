@@ -31,21 +31,32 @@ function Header() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Business Solutions
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/contact-us">Action</a>
-                <a class="dropdown-item" href="/">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/">Something else here</a>
+                  <a class="dropdown-item" href="/project-management">Project Management</a>
+                  <a class="dropdown-item" href="/consulting">Consulting</a>
               </div>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Software
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/cherry-cola">Cherry COLA</a>
+                  <a class="dropdown-item" href="/cherry-pie">Cherry PIE</a>
+                  <a class="dropdown-item" href="/advanced-reporting">Advanced Reporting</a>
+                  <a class="dropdown-item" href="/terminal-services">Terminal Services</a>
+              </div>
+                <div class="dropdown-divider"></div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">link</a>
+              <a class="nav-link" href="/about-us">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id='contact-button' href="/contact-us">Contact Us</a>
