@@ -22,9 +22,9 @@ function Header() {
       <header>
         <a href="/"><img  src="https://cherry-solutions.com/wp-content/uploads/2021/04/Cherry_logo.png" width="300" height="90" alt="Cherry Solutions" id="logo" data-height-percentage="60" data-actual-width="941" data-actual-height="257.031" ></img></a>
           <Link  to="/"></Link>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light navbar-expand-lg navbar-1 white">
           <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler ms auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -41,7 +41,7 @@ function Header() {
                   <a class="dropdown-item" href="/project-management">Project Management</a>
                   <a class="dropdown-item" href="/consulting">Consulting</a>
               </div>
-                <div class="dropdown-divider"></div>
+                {/* <div class="dropdown-divider"></div> */}
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,7 +53,7 @@ function Header() {
                   <a class="dropdown-item" href="/advanced-reporting">Advanced Reporting</a>
                   <a class="dropdown-item" href="/terminal-services">Terminal Services</a>
               </div>
-                <div class="dropdown-divider"></div>
+                {/* <div class="dropdown-divider"></div> */}
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about-us">About Us</a>

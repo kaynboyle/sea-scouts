@@ -43,9 +43,16 @@ a{
 
 }
 
-button{
-  background-color: rgb(240, 77, 77) !important;
+#whole-nav{
+
 }
+.navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=FF0000');
+}
+/* button{
+  background-color: rgb(253, 250, 250) !important;
+} */
+
 #contact-button{
   background-color: red !important;
   padding: 5px;
@@ -117,7 +124,16 @@ a:hover {
   position: relative;
   z-index: 99999;
 }
+.navbar{
+  justify-content: center !important;
+  margin-top: 50px;
+}
 
+
+
+.navbar a{
+  margin-top: 10px;
+}
 .card{
  /* margin-left: 300px; */
  margin-bottom: 20px;
