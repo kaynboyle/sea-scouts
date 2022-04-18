@@ -1,3 +1,4 @@
+import "./style.css";
 import React, { useState } from 'react';
 var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';

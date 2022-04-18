@@ -1,0 +1,73 @@
+.bios{
+    margin-top: 100px;
+  }
+  .power-bottom{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 10%;
+  }
+  
+  .power-bottom .profile{
+    background-color: rgb(136, 178, 241);
+  }
+  .power-bottom img{
+    width: 70%;
+    height: 100%;
+  }
+  
+  .image-layer{
+    position: absolute;
+    left: -9999px;
+    
+  
+  }
+  li:hover .image-layer {
+    left: 12%;
+    margin-top: -20% !important;
+    width: 21%;
+    height: 44%;
+  }
+  
+  .caption{
+    position: absolute;
+    left: -9999px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  
+    
+  
+  }
+  li:hover .caption {
+    background-color: rgb(227, 231, 235);
+    left: 55%;
+    margin-top: -6%;
+    
+  
+  }
+  li:hover #prof2 {
+    border: 6px solid red;
+  }
+  
+  li:hover #prof3 {
+    opacity:0.5;
+  }
+  
+  .prof-info{
+    position: absolute;
+    left: -9999px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+  }
+  li:hover .prof-info {
+    background-color: rgba(177, 192, 206, 0.507);
+    left: 74%;
+    margin-top: -16%;
+    padding: 60px;
+  }
+  
+  

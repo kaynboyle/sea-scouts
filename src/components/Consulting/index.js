@@ -1,8 +1,10 @@
+import "./style.css";
 import React, { useState } from 'react';
 var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';
 // import {Elements} from '@stripe/react-stripe-js';
 // import {loadStripe} from '@stripe/stripe-js'
+
 const Consulting = () => {
 
 return(

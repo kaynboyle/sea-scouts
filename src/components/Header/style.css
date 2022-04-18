@@ -1,0 +1,75 @@
+header {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(3px + 2vmin);
+    color: black;
+    margin-right: 20px;
+    white-space: nowrap;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif !important;
+    
+  }
+  nav{
+    margin-top: 50px;
+  }
+  a{
+   font-weight: bold !important;
+   color: black !important;
+  
+  }
+  
+  #whole-nav{
+  
+  }
+  .navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=FF0000');
+  }
+  /* button{
+    background-color: rgb(253, 250, 250) !important;
+  } */
+  
+  #contact-button{
+    background-color: red !important;
+    padding: 5px;
+    color: white !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  
+  }
+  #contact-button:hover{
+    color: black !important;
+  }
+  
+  #logo{
+    width: 20%;
+    heigth: 10%;
+    margin-left: 20px;
+  }
+  #main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 23px;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    line-height: 23px;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 99999;
+  }
+  .navbar{
+    justify-content: center !important;
+    margin-top: 50px;
+  }
+  
+  
+  
+  .navbar a{
+    margin-top: 10px;
+  }

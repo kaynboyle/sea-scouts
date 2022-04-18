@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { useMousePosition } from "../../assets/scripts/script.js"
+import { useMousePosition } from "../../assets/scripts/mousePosition.js";
+import "./style.css";
 function ContactUs() {
     const mouse = useMousePosition();
     React.useEffect(() => {
@@ -27,7 +28,7 @@ function ContactUs() {
         draw = () => {
             c.strokeStyle = 'rgba(255, 255, 255, 0.5)';
             c.fillStyle = 'rgba(255, 255, 255, 0.3)';
-        const drawLinePath = (width = 0, color) => {
+        const drawLinePath = (width = 6, color) => {
             c.beginPath();
             c.moveTo(this.x - (width / 2), this.y + (width / 2));
             c.lineTo(this.x - (width / 2) + 300, this.y - (width / 2) - 1000);

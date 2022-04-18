@@ -1,5 +1,6 @@
+import "./style.css";
 import React, { useState } from 'react';
-import prof1 from "../../assets/placeholder.png";
+import prof1 from "../../assets/images/placeholder.png";
 const About = () => {
 
 return(

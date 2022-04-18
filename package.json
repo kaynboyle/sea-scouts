@@ -12,10 +12,13 @@
     "cluster": "^0.7.7",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "gsap": "^3.10.3",
     "nodemailer": "^6.7.3",
     "os": "^0.1.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.2.3",
     "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
