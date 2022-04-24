@@ -19,55 +19,44 @@
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
   }
-  #slider {
-    min-height: 80px;
-    margin: auto;
-    overflow: hidden;
-    padding: 10px;
+#title{
+    background-color: red;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 900 !important;
+    color: white;
+}
+
+#slideset1 {
+    height: 10em; 
     position: relative;
-    width: 600px;
-  }
-  #slider ul {
-    list-style: none;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 9000px;
-    transition: left 0.2s linear;
-    -moz-transition: left 0.2s linear;
-    -o-transition: left 0.2s linear;
-    -webkit-transition: left 0.2s linear;
-    margin-left: -25px;
-  }
-  #slider ul li {
-    font-family: "Montserrat", sans-serif;
-    float: left;
-    position: relative;
-    width: 600px;
-    display: inline-block;
-    height: 200px;
-  }
-  /* Content */
-  .slider-container {
-    color: #04386a;
-    font-size: 1.8em;
-    font-weight: 900;
-    line-height: 1.1;
-    margin: 0 auto;
-    max-width: 550px;
-    min-height: 180px;
-    padding: 0;
-    text-align: center;
-  }
-  .slider-container span {
-    color: rgba(4, 56, 106, 0.7);
-    display: inline-block;
-    font-size: 70%;
-    font-weight: 300;
-    line-height: 1.2;
-  }
+    margin-left: 30%;
+}
+#slideset1 > * {visibility: hidden; position: absolute;
+    top: 0; left: 0; animation: 24s autoplay1 infinite}
+ @keyframes autoplay1 {
+     /* from{
+         margin-left: 100%;
+         width: 300%;
+     }
+     to{
+         margin-left: 0%;
+         width: 300%;
+     } */
+     0% {visibility:visible }
+     16.5% {visibility: hidden}
+ }
+ #slideset1 > *:nth-child(1) {animation-delay: 0s}
+ #slideset1 > *:nth-child(2) {animation-delay: 4s}
+ #slideset1 > *:nth-child(3) {animation-delay: 8s}
+ #slideset1 > *:nth-child(4) {animation-delay: 12s}
+ #slideset1 > *:nth-child(5) {animation-delay: 16s}
+ #slideset1 > *:nth-child(6) {animation-delay: 20s}
+
   /*** target hooks ****/
-  @-webkit-keyframes slide-animation {
+  /* @-webkit-keyframes slide-animation {
     0% {
       opacity: 0;
     }
@@ -118,12 +107,13 @@
       left: 0px;
       opacity: 0;
     }
-  }
-  #slider ul {
+  } */
+  /* #slider ul {
     -webkit-animation: slide-animation 20s infinite;
   }
   #slider ul:hover {
     -moz-animation-play-state: paused;
     -webkit-animation-play-state: paused;
-  }
-  
+  } */
+
+

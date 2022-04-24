@@ -11,41 +11,30 @@ const CherryCola = () => {
     
 return(
     <main>
-       <div className="container">
-       <div id="slider">
-            <ul>
-            <li>
-                <div className="slider-container">
-                SUBSTANTIAL GAINFUL ACTIVITY<br />
-                    <span>Are you making more than <strong>$1,260?</strong></span>
-                </div>
-            </li>
-            <li>
-                <div className="slider-container">
-                SEVERE?<br />
-                <span>Do you have <strong>Objective Medical Evidence?</strong></span>      
-                </div>
-            </li>
-            <li>
-                <div className="slider-container">
-                MEETS LESTING<br />
-                <span>Are you properly matched to your work description?</span>
-                </div>
-            </li>  
-            <li>
-                <div className="slider-container">
-                PRESENT RELATIVE WORK<br />
-                <span>Are you properly matched to your work description?</span>
-                </div>
-            </li>
-            <li>
-                <div className="slider-container">
-                OTHER WORK<br />
-                <span>Can a Vocational Expert help you find other work?</span>
-                </div>
-            </li>
-            </ul>
+        <div id="title">
+            <h1>Cherry COLA</h1>
         </div>
+        <div id="slideset1">
+            <div>
+                <h1>Reduced Man Hours</h1>
+                {/* <p>Slide 1</p> */}
+                {/* <p>It has a <a href="./">link.</a> */}
+            </div>
+            <div>
+                <h1>Transparency in the work process</h1>
+            </div>
+            <div>
+                <h1>Increased accountability of employees</h1>
+            </div>
+            <div>
+                <h1>Understanding costs and Ops efficiency</h1>
+            </div>
+            <div>
+                <h1>Knowledge of resource demand</h1>
+            </div>
+            <div>
+                <h1>Tracking costs to budget</h1>
+            </div>
         </div>
 
     </main>
