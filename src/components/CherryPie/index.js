@@ -9,7 +9,7 @@ const CherryPie = () => {
 return(
     <main id="donate-page" className="flex-row">
         <div className=".timezone-converter">
-                <h2>Give me money</h2>
+                <h2>Cherry PIE</h2>
                 
                 {/* <a id="donate-button" className="button is-info is-outlined" href="https://buy.stripe.com/test_eVag2B6azdmzf28aEE">One Time 5$ Donation</a> */}
         </div>
