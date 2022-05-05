@@ -1,7 +1,28 @@
 .bios{
-    margin-top: 100px;
+    margin-top: 30px;
   }
+  title{
+    background-image: url("https://cherry-solutions.com/wp-content/uploads/2021/03/about-hero-min.jpeg"),linear-gradient(180deg,#8e8e8e 0%,rgba(0,0,0,0.72) 100%)!important;;
+  }
+  .group-statment{
+    /* display: flex; */
+    margin-top: 100px;
+    background-color:rgba(173, 224, 240, 0.5);
+    margin-left: 15%;
+    margin-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+  /* .group-statment img{
+    height: 6%;
+    width: 6%;
+    margin-top: -5px;
+    margin-left: -10px;
+    margin-right: 10px;
+  } */
   .power-bottom{
+    margin-top: -150px;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -19,7 +40,7 @@
     height: 100%;
   }
   
-  .image-layer{
+  /* .image-layer{
     position: absolute;
     left: -9999px;
     
@@ -30,7 +51,7 @@
     margin-top: -20% !important;
     width: 21%;
     height: 44%;
-  }
+  } */
   
   .caption{
     position: absolute;
@@ -41,18 +62,38 @@
     
   
   }
-  li:hover .caption {
+  #prof1:hover .caption {
     background-color: rgb(227, 231, 235);
-    left: 55%;
     margin-top: -6%;
+    left: 21%;
     
   
   }
-  li:hover #prof2 {
+  li:hover #prof1 {
     border: 6px solid red;
   }
   
+  li:hover #prof2 {
+    border: 6px solid red;
+  }
   li:hover #prof3 {
+    border: 6px solid red;
+  }
+  
+  #prof1{
+    width: 30%;
+    height: 30%;
+    margin-left: -20%;
+  }
+  #prof3{
+    width: 240px;
+    margin-right: 20%;
+    
+  }
+  #prof2{
+    margin-left: -85%;
+  }
+  li:hover img {
     opacity:0.5;
   }
   
@@ -63,11 +104,37 @@
     font-weight: bold;
    
   }
+  .prof-info1{
+    position: absolute;
+    left: -9999px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+  }
+  .prof-info2{
+    position: absolute;
+    left: -9999px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+  }
   li:hover .prof-info {
     background-color: rgba(177, 192, 206, 0.507);
-    left: 74%;
-    margin-top: -16%;
-    padding: 60px;
+    left: 78%;
+    margin-top: -10%;
+    padding: 40px;
   }
   
+  li:hover .prof-info1 {
+    background-color: rgba(177, 192, 206, 0.507);
+    left: 13%;
+    margin-top: -10%;
+    padding: 40px;
+  }
   
+  li:hover .prof-info2 {
+    background-color: rgba(177, 192, 206, 0.507);
+    left: 40%;
+    margin-top: -10%;
+    padding: 40px;
+  }

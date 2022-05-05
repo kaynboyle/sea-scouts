@@ -5,7 +5,7 @@ import "./style.css";
 function ContactUs() {
     const mouse = useMousePosition();
     React.useEffect(() => {
-        const cvs = document.querySelector('canvas');
+        const cvs = document.getElementById('myCanvas');
         const c = cvs.getContext('2d');
         cvs.width = window.innerWidth;
         
@@ -41,7 +41,6 @@ function ContactUs() {
         };
         drawLinePath(150, '#baf2ef');
         drawLinePath(50, '#dcf3ff');
-
         c.beginPath();
         c.arc(this.x, this.y, 1, 0, Math.PI * 2, false);
         c.fill();
