@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
-// import { useEffect, useState } from "react";
+import { useMousePosition } from "../../assets/scripts/mousePosition.js";
 // var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';
-// import {Elements} from '@stripe/react-stripe-js';
-// import {loadStripe} from '@stripe/stripe-js'
+
 const Home = () => {
+    const mouse = useMousePosition();
     React.useEffect(() => {
         const canvas = document.getElementById('moss-graph');
         const ctx = canvas.getContext('2d');
-        var graphReady = false;
-        var graph = new Image();
-        graph.onload = loaded;
+        
+        // var graphReady = false;
+        // var graph = new Image();
+        // graph.onload = loaded;
         
         const circles = [{x:90,y:330},{x:220,y:300},{x:350,y:200},{x:460,y:100}]
         const line1 = [{x: 90, y:345},{x: 90, y:420}];
@@ -61,6 +62,10 @@ const Home = () => {
         // ctx.fillRect(0, 0, 150, 100);
         // ctx.fillStyle = "red";
         // ctx.fill();
+        function drawGraph(e){
+                x=e.clientX;
+            
+        }
     
     });
     // const ctx = canvas.getContext('2d');
