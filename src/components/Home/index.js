@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
 import { useMousePosition } from "../../assets/scripts/mousePosition.js";
+import gif1 from "../../assets/images/cherry-slides-gif.gif";
+import terminalStock1 from "../../assets/images/isteal.jpg";
+import hero1 from "../../assets/images/hero-image.jpg";
+import graphic1 from "../../assets/images/fire-graphic1.png";
+//src\assets\images\cherry-slides-gif.gif
 // var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';
 
@@ -14,7 +19,7 @@ const Home = () => {
         // var graph = new Image();
         // graph.onload = loaded;
         
-        const circles = [{x:90,y:330},{x:220,y:300},{x:350,y:200},{x:460,y:100}]
+        const circles = [{x:90,y:330},{x:220,y:300},{x:350,y:200},{x:460,y:100}];
         const line1 = [{x: 90, y:345},{x: 90, y:420}];
         const line2 = [{x:220, y:315},{x: 220, y: 420}];
         const line3 = [{x:350, y:220}, {x:350, y:420}];
@@ -62,10 +67,10 @@ const Home = () => {
         // ctx.fillRect(0, 0, 150, 100);
         // ctx.fillStyle = "red";
         // ctx.fill();
-        function drawGraph(e){
-                x=e.clientX;
+        // function drawGraph(e){
+        //         x=e.clientX;
             
-        }
+        // }
     
     });
     // const ctx = canvas.getContext('2d');
@@ -76,12 +81,18 @@ const Home = () => {
     
 return(
     <main>
-        <div className="home1">
-                <h2>Home</h2>
+
+        <div className="homeFlex1">
+            <div className="1HomeFlex1">
+                <img src={gif1} alt="gif slideshow"/>
+
+            </div>
+            <div className= "2HomeFlex1">
                 
-                {/* <a id="donate-button" className="button is-info is-outlined" href="https://buy.stripe.com/test_eVag2B6azdmzf28aEE">One Time 5$ Donation</a> */}
+            </div>
         </div>
         <div className="bigger-box">
+
             <div className="left-box">
                 <h1>Left to the left left left left box</h1>
             </div>
@@ -91,9 +102,16 @@ return(
                     <h2>Pace of <br/>Improvment</h2>
                     <p id="declining">Declining</p>
                 </div>
-                <div className="canvas-container">
-                    <h2>The Four Stages of <br/>Managment Operating System<br/>(MOS) Maturity</h2>
-                    <canvas id="moss-graph" width="550" height="450"></canvas>
+                <div className="graph-container">
+                    <div className="canvas-container">
+                        <h2>The Four Stages of <br/>Managment Operating System<br/>(MOS) Maturity</h2>
+                        <canvas id="moss-graph" width="550" height="450"></canvas>
+                    </div>
+                    <div className="icon-container">
+                        <img src={graphic1} alt="flame graphic"/>
+                        <img src={graphic1} alt="flame graphic"/>
+                        <img src={graphic1} alt="flame graphic"/>
+                    </div>
                 </div>
             </div>
         </div>

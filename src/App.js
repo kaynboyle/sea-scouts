@@ -20,6 +20,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+      <head>
+        <link href="/dist/output.css" rel="stylesheet"/>
+      </head>
       <Router>
         <header className="App-header">
 
