@@ -4,7 +4,11 @@ import { useMousePosition } from "../../assets/scripts/mousePosition.js";
 import gif1 from "../../assets/images/cherry-slides-gif.gif";
 import terminalStock1 from "../../assets/images/isteal.jpg";
 import hero1 from "../../assets/images/hero-image.jpg";
-import graphic1 from "../../assets/images/fire-graphic1.png";
+import flame from "../../assets/images/flame.png";
+import wave from "../../assets/images/wave.png";
+import graph from "../../assets/images/graph.png";
+import cycle from "../../assets/images/cycle.png";
+
 //src\assets\images\cherry-slides-gif.gif
 // var axios = require("axios").default;
 // import { useMutation } from '@apollo/client';
@@ -20,6 +24,7 @@ const Home = () => {
         // graph.onload = loaded;
         
         const circles = [{x:90,y:330},{x:220,y:300},{x:350,y:200},{x:460,y:100}];
+        const arrows = [{x1:10,y1:30, x2:30, y2:30},{x1:10,y1:400, x2:30, y2:400},{x:350,y:200},{x:460,y:100}];
         const line1 = [{x: 90, y:345},{x: 90, y:420}];
         const line2 = [{x:220, y:315},{x: 220, y: 420}];
         const line3 = [{x:350, y:220}, {x:350, y:420}];
@@ -35,16 +40,42 @@ const Home = () => {
         ctx.lineTo(520, 300);
         // ctx.lineTo()
         ctx.stroke();
-
+        function drawArrowsUp(arrows){
+            let height = (arrows.x1*2)* Math.cos(Math.PI/6);
+            ctx.beginPath();
+            ctx.moveTo(arrows.x1, arrows.y1);
+            ctx.lineTo(arrows.x2, arrows.y2);
+            ctx.lineTo(arrows.x1*2, arrows.y1-height);
+            ctx.strokeStyle = "#191970";
+            ctx.stroke();
+            ctx.fillStyle = "#191970";
+            ctx.fill();
+            
+            
+        };
+        function drawArrowsDown(arrows){
+            let height = (arrows.x1*2)* Math.cos(Math.PI/6);
+            ctx.beginPath();
+            ctx.moveTo(arrows.x1, arrows.y1);
+            ctx.lineTo(arrows.x2, arrows.y2);
+            ctx.lineTo(arrows.x1*2, arrows.y1+height);
+            ctx.strokeStyle = "#191970";
+            ctx.stroke();
+            ctx.fillStyle = "#191970";
+            ctx.fill();
+            
+        };
+        drawArrowsUp(arrows[0]);
+        drawArrowsDown(arrows[1]);
         function drawCircles(circles){
-        ctx.beginPath();
-        ctx.lineWidth =3;
-        ctx.strokeStyle = "#E0FFFF";
-        ctx.fill();
-        ctx.fillStyle = "#FF0000";
-        ctx.arc(circles.x, circles.y, 10, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.fill();
+            ctx.beginPath();
+            ctx.lineWidth =3;
+            ctx.strokeStyle = "#E0FFFF";
+            ctx.fill();
+            ctx.fillStyle = "#FF0000";
+            ctx.arc(circles.x, circles.y, 10, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
         };
         drawCircles(circles[0]);
         drawCircles(circles[1]);
@@ -84,7 +115,11 @@ return(
 
         <div className="homeFlex1">
             <div className="1HomeFlex1">
-                <img src={gif1} alt="gif slideshow"/>
+                {/* <img src={gif1} alt="gif slideshow"/> */}
+                <h1>Our Mission</h1>
+                <h2>
+            Navigating thru change to find optimal; enabling and
+            empowering organizations to envision and achieve it.</h2>
 
             </div>
             <div className= "2HomeFlex1">
@@ -94,7 +129,10 @@ return(
         <div className="bigger-box">
 
             <div className="left-box">
-                <h1>Left to the left left left left box</h1>
+                <h1>Management Operating System: A MOS</h1>
+                <p>-A Management Operating System (MOS) is the set of tools, meetings and behaviors used to manage your people and processes to deliver results. </p>
+                <p>- A Management Operating System (MOS) follows the Plan, Do, Check, Act improvement cycle to get control and steadily improve process performance.</p>
+                <p>The MOS would incorporate and employ a variety of subsystems inclusive of 'any' TOS.</p>
             </div>
             <div className="flexbox">
                 <div className="graphTitle">
@@ -108,9 +146,10 @@ return(
                         <canvas id="moss-graph" width="550" height="450"></canvas>
                     </div>
                     <div className="icon-container">
-                        <img src={graphic1} alt="flame graphic"/>
-                        <img src={graphic1} alt="flame graphic"/>
-                        <img src={graphic1} alt="flame graphic"/>
+                        <img src={flame} alt="flame icon"/>
+                        <img src={wave} alt="wave icon"/>
+                        <img src={graph} alt="graph icon"/>
+                        <img src={cycle} alt="cycle icon"/>
                     </div>
                 </div>
             </div>
