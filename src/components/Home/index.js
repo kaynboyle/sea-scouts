@@ -112,9 +112,16 @@ const Home = () => {
     
 return(
     <main>
+        <div class="hero-image">
+        <div class="hero-text">
+          <h1>Cherry Solutions
+          </h1>
+
+        </div>
+        </div>
 
         <div className="homeFlex1">
-            <div className="1HomeFlex1">
+            <div className="shadow-2xl">
                 {/* <img src={gif1} alt="gif slideshow"/> */}
                 <h1>Our Mission</h1>
                 <h2>
@@ -128,34 +135,72 @@ return(
         </div>
         <div className="bigger-box">
 
-            <div className="left-box">
-                <h1>Management Operating System: A MOS</h1>
-                <p>-A Management Operating System (MOS) is the set of tools, meetings and behaviors used to manage your people and processes to deliver results. </p>
-                <p>- A Management Operating System (MOS) follows the Plan, Do, Check, Act improvement cycle to get control and steadily improve process performance.</p>
-                <p>The MOS would incorporate and employ a variety of subsystems inclusive of 'any' TOS.</p>
+            <div id="left-of-graph">
+                <div className="shadow-2xl" id="mos-description">
+                    <h1>Management Operating System: A MOS</h1>
+                    <p><br/>-A Management Operating System (MOS) is the set of tools, meetings and behaviors used to manage your people and processes to deliver results. </p>
+                    <p>- A Management Operating System (MOS) follows the Plan, Do, Check, Act improvement cycle to get control and steadily improve process performance.</p>
+                    <p>The MOS would incorporate and employ a variety of subsystems inclusive of 'any' TOS.</p>
+                </div>
+                <div className="shadow-2xl" id="lower-left">
+                    <div className="button-column">
+                        <ul>
+                            <li>
+                                <img id="flame1" src={flame} alt="flame icon"/>
+                            </li>
+                            <li>
+                                <button><img src={graph} alt="graph icon"/></button>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div className="button-column">
+                        <ul>
+                                <li>
+                                    <img id="wave" src={wave} alt="wave icon"/>
+                                </li>
+                                <li>
+                                    <img src={cycle} alt="cycle icon"/>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    {/* <img id="flame" src={flame} alt="flame icon"/>
+                        <img id="wave" src={wave} alt="wave icon"/>
+                        <img src={graph} alt="graph icon"/>
+                        <img src={cycle} alt="cycle icon"/> */}
+                </div>
             </div>
-            <div className="flexbox">
+            <div className="shadow-2xl" id="flexbox">
                 <div className="graphTitle">
                     <p id="improving" class>Improving</p>
-                    <h2>Pace of <br/>Improvment</h2>
+                    <h2>Pace of <br/>Improvement</h2>
                     <p id="declining">Declining</p>
                 </div>
                 <div className="graph-container">
                     <div className="canvas-container">
-                        <h2>The Four Stages of <br/>Managment Operating System<br/>(MOS) Maturity</h2>
+                        <h2>The Four Stages of <br/>Management Operating System<br/>(MOS) Maturity</h2>
                         <canvas id="moss-graph" width="550" height="450"></canvas>
                     </div>
                     <div className="icon-container">
-                        <img src={flame} alt="flame icon"/>
-                        <img src={wave} alt="wave icon"/>
+                        <img id="flame" src={flame} alt="flame icon"/>
+                        <img id="wave" src={wave} alt="wave icon"/>
                         <img src={graph} alt="graph icon"/>
                         <img src={cycle} alt="cycle icon"/>
                     </div>
+                    <div className="text-container">
+                        <button>Fighting<br/>Fires</button>
+                        <button>Treading<br/>Water</button>
+                        <button>Incrementally<br/>Improving</button>
+                        <button>lskdfja;sdlkjfaskldf;ajdsf<br/>laksdjfa;lskdjfa;slkdjfalkdsjf<br/>laksdjfa;lskdjfa;slkdjfalkdsjf</button>
+                        {/* <p>-Working hard but losing ground<br/>-Lack of a coherent structure in operations management<br/>-Addressing symptoms instead of root causes<br/>-Explaining away poor performance as "out of our control"</p> */}
+                    </div>
+                      
                 </div>
             </div>
         </div>
-        <div>
-            <h1>here</h1>
+        <div className="shadow-2xl" id="answers" >
+             <p>here</p>
         </div>
     </main>
     // add link and preview image to download with the kebab nav bar

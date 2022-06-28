@@ -66,13 +66,7 @@ function Header() {
         </div>
       </nav>
       </header>
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>What We Do
-          </h1>
-
-        </div>
-      </div>
+      
     </div>
       );
 }
