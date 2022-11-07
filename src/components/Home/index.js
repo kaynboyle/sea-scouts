@@ -131,15 +131,27 @@ const Home = () => {
                     <p>Optimizing Container Terminal  Performace, 
                       Tredictability & Transparancy.
                     </p>
-                    <button className="button is-link is-outlined">Learn More</button>
+                    <button id="home-header-button" className="button is-info">Learn More</button>
                     <p> </p>
                     <p>Integrating People, Process & Technology 
                       by applying professional and solution serivices
-                      for configuring and installing  ‘Success by Design
+                      for configuring and installing 'Success by Design'
                     </p>
                   </div>
                 </div>
              </div>
+          </div>
+          <div>
+            <div className="shadow-2xl" id="box-one-home">
+              <div id="background-box-one-home">
+                <div>
+                
+                </div>
+              </div>
+              <div>
+                   <p>hi</p>
+              </div>
+            </div>
           </div>
         
     </main>
