@@ -144,12 +144,10 @@ const Home = () => {
           <div>
             <div className="shadow-2xl" id="box-one-home">
               <div id="background-box-one-home">
-                <div>
-                
-                </div>
+                <p></p>
               </div>
-              <div>
-                   <p>hi</p>
+              <div id='text-box-one-home'>
+                   <p>bye</p>
               </div>
             </div>
           </div>

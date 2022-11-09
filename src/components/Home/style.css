@@ -11,25 +11,31 @@
        
         opacity: 0.9;
         /* Set a specific height */
-        height: 400px;
+        height: 600%;
       
         /* Position and center the image to scale nicely on all screens */
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
         margin-bottom: 20px;
+        filter: drop-shadow(30px 10px 4px #86869f);
         /* margin-left: -100px;
         margin-right: -100px; */
       }
+      /* @media only screen and (max-device-width: 1366px) {
+        .hero-image {
+          background-attachment: scroll;
+        }
+      } */
       
       /* Place text in the middle of the image */
       #hero-text {
         
         text-align: center;
       
-        padding-top: 120px;
-        padding-bottom: 20px;
+        padding-top: 10%;
+        padding-bottom: 15%;
         padding-left: 15%;
         padding-right: 15%;
         /* top: 80%;
@@ -57,8 +63,10 @@
         background-color: rgba(86, 86, 132, 0.389);
         padding-top: 20px;
         padding-bottom: 20px;
-       padding-right: 40%
-      }
+       padding-right: 40%;    
+       display: flex;
+       flex-direction: row; 
+     }
 
       #background-box-one-home{
         background-image: 
@@ -69,8 +77,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        height: 400px;
+        height: 400%;
+        width: 150%;
       }
+    #text-box-one-home{
+        margin-left: -80%;
+        margin-top: 100px;
+        background-color: rgb(62, 79, 172);
+    }
+
 .graphTitle{
     margin-top: 200px;
     color: #191970;
@@ -193,3 +208,4 @@
 #answers{
     margin-top: 50px;
 }
+

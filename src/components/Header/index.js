@@ -1,8 +1,12 @@
 import "./style.css";
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 // import { setContext } from '@apollo/client/link/context';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
   // function dropDown(e) {
@@ -16,59 +20,110 @@ function Header() {
   //     }
   //   }
   // }
-  let p = document.getElementById('dropdown1');
+  // let p = document.getElementById('dropdown1');
   return (
     <div className="App">
-    
       <header>
-        <a href="/"><img  src="https://cherry-solutions.com/wp-content/uploads/2021/04/Cherry_logo.png" width="300" height="90" alt="Cherry Solutions" id="logo" data-height-percentage="60" data-actual-width="941" data-actual-height="257.031" ></img></a>
-          <Link  to="/"></Link>
+        <a href="/">
+          <img
+            src="https://cherry-solutions.com/wp-content/uploads/2021/04/Cherry_logo.png"
+            width="300"
+            height="90"
+            alt="Cherry Solutions"
+            id="logo"
+            data-height-percentage="60"
+            data-actual-width="941"
+            data-actual-height="257.031"
+          ></img>
+        </a>
+        <Link to="/"></Link>
         <nav className="navbar navbar-light navbar-expand-lg navbar-1 white">
           <a className="navbar-brand" href="#"></a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span className="navbar-toggler-icon"></span>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">Home(current)<span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Business Solutions
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/project-management">Project Management</a>
-                  <a className="dropdown-item" href="/consulting">Consulting</a>
-              </div>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">
+                  Home(current)<span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="/"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Business Solutions
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="/project-management">
+                    Project Management
+                  </a>
+                  <a className="dropdown-item" href="/consulting">
+                    Consulting
+                  </a>
+                </div>
                 {/* <div className="dropdown-divider"></div> */}
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Software
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/cherry-cola">Cherry COLA</a>
-                  <a className="dropdown-item" href="/cherry-pie">Cherry PIE</a>
-                  <a className="dropdown-item" href="/advanced-reporting">Advanced Reporting</a>
-                  <a className="dropdown-item" href="/terminal-services">Terminal Services</a>
-              </div>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Software
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="/cherry-cola">
+                    Cherry COLA
+                  </a>
+                  <a className="dropdown-item" href="/cherry-pie">
+                    Cherry PIE
+                  </a>
+                  <a className="dropdown-item" href="/advanced-reporting">
+                    Advanced Reporting
+                  </a>
+                  <a className="dropdown-item" href="/terminal-services">
+                    Terminal Services
+                  </a>
+                </div>
                 {/* <div className="dropdown-divider"></div> */}
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/about-us">About Us</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" id='contact-button' href="/contact-us">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/about-us">
+                  About Us
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" id="contact-button" href="/contact-us">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
-      
     </div>
-      );
+  );
 }
 
 export default Header;

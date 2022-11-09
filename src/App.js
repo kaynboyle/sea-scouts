@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import { setContext } from '@apollo/client/link/context';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bulma/css/bulma.min.css';
+// import 'bulma/css/bulma.min.css';
 
 
 import Home from './components/Home';
